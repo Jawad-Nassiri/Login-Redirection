@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سبزلرن - آموزش برنامه نویسی</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <!-- Website header  -->
+    <header class="header">
+      <div class="header-items">
+        <!-- Bars Icon For Mobile Version -->
+
+        <!-- Right Items (Menu & Logo) -->
+        <nav class="right-items">
+          <!-- App Logo -->
+          <div class="lg:ml-8">
+            <a href="https://sabzlearn.ir" class="block" title="سبز لرن">
+              <img
+                src="https://sabzlearn.ir/wp-content/themes/sabzlearn-theme/images/logo.webp"
+                class="h-12"
+                alt="سبز لرن"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <!-- Mobile Navigation -->
+
+          <!-- Main Menu -->
+          <ul class="hidden lg:flex gap-x-6 text-base">
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/course-cat/front-end/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                فرانت اند
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://sabzlearn.ir/course/html-tutorial/"
+                    class="submenu__link"
+                  >
+                    آموزش HTML
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/css-tutorial/"
+                    class="submenu__link"
+                  >
+                    آموزش CSS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/flex-box/"
+                    class="submenu__link"
+                  >
+                    آموزش FlexBox
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/css-grid/"
+                    class="submenu__link"
+                  >
+                    آموزش CSS Grid
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/ex-project-with-css/"
+                    class="submenu__link"
+                  >
+                    مینی پروژه های تخصصی با Css
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/tailwind-css/"
+                    class="submenu__link"
+                  >
+                    آموزش Tailwind CSS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/advance-template-design-with-html-css-flexbox/"
+                    class="submenu__link"
+                  >
+                    آموزش اصولی طراحی قالب
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/bootstrap5/"
+                    class="submenu__link"
+                  >
+                    آموزش بوت استرپ
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/java-script-zero-to-hero/"
+                    class="submenu__link"
+                  >
+                    آموزش جاوااسکریپت
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/js-exp-project/"
+                    class="submenu__link"
+                  >
+                    پروژه های تخصصی با JS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/reactjs/"
+                    class="submenu__link"
+                  >
+                    آموزش جامع ری اکت ReactJS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/free-vuejs-training/"
+                    class="submenu__link"
+                  >
+                    آموزش ویو جی اس
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/vscode-tutorial/"
+                    class="submenu__link"
+                  >
+                    آموزش Vscode
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/course-cat/security/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                امنیت
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 bg-slate-800 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://landing.sabzlearn.ir/landing/security-roadmap/"
+                    class="submenu__link"
+                  >
+                    نقشه راه ورود به دنیای هک و امنیت
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/black-network/"
+                    class="submenu__link"
+                  >
+                    شبکه با گرایش امنیت
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/linux-for-hackers/"
+                    class="submenu__link"
+                  >
+                    لینوکس با گرایش امنیت
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/ceh-v11/"
+                    class="submenu__link"
+                  >
+                    آموزش هکر قانونمند - CEH V11
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/pwk/"
+                    class="submenu__link"
+                  >
+                    آموزش کالی لینوکس
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/black-py/"
+                    class="submenu__link"
+                  >
+                    آموزش پایتون سیاه
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/burp-tutorial-in-real-world/"
+                    class="submenu__link"
+                  >
+                    آموزش Burp Suite
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/black-js/"
+                    class="submenu__link"
+                  >
+                    آموزش جاوااسکریپت سیاه
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/course-cat/python/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                پایتون
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 bg-slate-800 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://sabzlearn.ir/course/python/"
+                    class="submenu__link"
+                  >
+                    دوره آموزش پایتون
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/applied-projects-with-python/"
+                    class="submenu__link"
+                  >
+                    پروژه های کاربردی با پایتون
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/python-tricks/"
+                    class="submenu__link"
+                  >
+                    بهینه نویسی کد ها در پایتون
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/django-ex/"
+                    class="submenu__link"
+                  >
+                    آموزش جنگو
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/data-visualization-with-python/"
+                    class="submenu__link"
+                  >
+                    مصور سازی داده با پایتون
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/course-cat/php/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                پی اچ پی
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 bg-slate-800 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://sabzlearn.ir/course/telegram-bot-php/"
+                    class="submenu__link"
+                  >
+                    ربات تلگرام با PHP
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/applied-projects-with-php/"
+                    class="submenu__link"
+                  >
+                    پروژه های کاربردی با PHP
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/course-cat/skill-up/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                ارتقای مهارت ها
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 bg-slate-800 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://sabzlearn.ir/course/algorithm/"
+                    class="submenu__link"
+                  >
+                    الگوریتم و ساختمان داده
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/websocket/"
+                    class="submenu__link"
+                  >
+                    آموزش websocket
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/git-github/"
+                    class="submenu__link"
+                  >
+                    گیت و گیتهاب
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/graphql/"
+                    class="submenu__link"
+                  >
+                    آموزش GraphQL
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/javascript-library-development/"
+                    class="submenu__link"
+                  >
+                    توسعه کتابخانه با JS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/browser-extension-with-js/"
+                    class="submenu__link"
+                  >
+                    افزونه نویسی با JS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/clean-code-for-js/"
+                    class="submenu__link"
+                  >
+                    Clean Code برای JS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/deploy-for-js/"
+                    class="submenu__link"
+                  >
+                    دیپلوی پروژه های JS
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/mern-stack/"
+                    class="submenu__link"
+                  >
+                    دوره Mern Stack
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/regex/"
+                    class="submenu__link"
+                  >
+                    آموزش رجکس (regex)
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/npm-tutorial/"
+                    class="submenu__link"
+                  >
+                    NPM برای جاوااسکریپت کارها
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/course/vscode-tutorial/"
+                    class="submenu__link"
+                  >
+                    آموزش Vscode
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                href="https://sabzlearn.ir/blog/"
+                class="flex items-center gap-x-1 h-full group-hover:text-green-500 transition-colors"
+              >
+                مقالات
+                <svg class="w-4 h-4">
+                  <use href="#chevron-down"></use>
+                </svg>
+              </a>
+              <!-- Show When Hover - Submenu -->
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute right-0 top-full pt-7 transition-all z-10"
+              >
+                <div
+                  class="flex flex-col gap-y-4 w-64 bg-slate-800 p-5 border border-neutral-100 bg-slate-800 dark:border-y dark:border-x-0 dark:border-green-500 shadow-sm dark:shadow-none rounded-xl"
+                >
+                  <a
+                    href="https://sabzlearn.ir/blog/category/اچ-تی-ام-ال/"
+                    class="submenu__link"
+                  >
+                    اچ تی ام ال
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/بوت-استرپ/"
+                    class="submenu__link"
+                  >
+                    بوت استرپ
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/تست-نفوذ-و-امنیت-وب/"
+                    class="submenu__link"
+                  >
+                    تست نفوذ و امنیت وب
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/جی-کوئری/"
+                    class="submenu__link"
+                  >
+                    جی کوئری
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/ریکت-جی-اس/"
+                    class="submenu__link"
+                  >
+                    ری اکت جی اس
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/سی-اس-اس/"
+                    class="submenu__link"
+                  >
+                    سی اس اس
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/طراحی-سایت/"
+                    class="submenu__link"
+                  >
+                    طراحی سایت
+                  </a>
+                  <a
+                    href="https://sabzlearn.ir/blog/category/ویو-جی-اس/"
+                    class="submenu__link"
+                  >
+                    ویو جی اس
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <h1 class="title">
+            دوره های فرانت اند
+        </h1>
+      <div class="container products">
+        <article class="product">
+          <header>
+            <img src="./public/images/image01.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image02.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image03.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image04.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image05.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image06.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image07.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image08.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image09.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image10.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/image11.webp" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+        <article class="product">
+          <header>
+            <img src="./public/images/js-expert.jpg" alt="" />
+          </header>
+          <main class="product-body">
+            <a href="#">
+              <h2>آموزش مقدماتی تا پیشرفته دیپلوی</h2>
+            </a>
+            <p class="desc">
+              تو هر فیلدی فعالیت بکنی برای پرزنت خودت تو بازار کار و نمایش نمونه
+              کارات نیاز به دپلوی داری. تو…
+            </p>
+
+            <div class="details">
+              <p class="teacher">محمدامین سعیدی راد</p>
+            </div>
+          </main>
+          <footer class="product-footer">
+            <div>
+              <span> دانشجو: </span>
+              <span class="students">4,285</span>
+            </div>
+
+            <div>
+              <p class="price">790,000</p>
+            </div>
+          </footer>
+        </article>
+      </div>
+      <ul class="pagination">
+        <button class="prev-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+        <ul class="pagination-items">
+            <li tabindex="1" class="page">1</li>
+            <li tabindex="1" class="page active">2</li>
+            <li tabindex="1" class="page">3</li>
+            <li tabindex="1" class="page">4</li>
+        </ul>
+        <button class="next-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <div class="container mx-auto">
+        <div class="pb-5 mb-5 sm:pb-8 sm:mb-8 border-b border-b-neutral-200">
+          <div class="flex items-center justify-between">
+            <a
+              href="https://sabzlearn.ir"
+              title="سبز لرن"
+              class="flex items-center gap-x-3.5"
+            >
+              <img
+                src="https://sabzlearn.ir/wp-content/themes/sabzlearn-theme/images/logo.webp"
+                class="h-8 sm:h-12"
+                alt="سبز لرن"
+                loading="lazy"
+              />
+              <svg class="w-[70px] sm:w-[104px] h-8 sm:h-12">
+                <use href="#logo-type"></use>
+              </svg>
+            </a>
+            <div class="flex gap-x-2 sm:gap-x-3">
+              <a href="https://www.instagram.com/sabzlearn_" rel="nofollow">
+                <svg
+                  class="size-[30px] sm:size-[38px] text-neutral-300 transition-colors hover:text-sky-500"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19 0C29.4938 0 38 8.42804 38 18.8254C38 29.2227 29.4938 37.6508 19 37.6508C8.50621 37.6508 0 29.2227 0 18.8254C0 8.42804 8.50621 0 19 0ZM15.0248 9.3296C11.4505 9.49138 9.57273 11.4842 9.41687 14.8868C9.29813 17.4628 9.29813 20.188 9.41687 22.764C9.57273 26.1666 11.4505 28.1594 15.0248 28.3212C17.6255 28.4381 20.3753 28.4381 22.9759 28.3212C26.41 28.1653 28.4206 26.3077 28.5839 22.764C28.7019 20.1873 28.7019 17.4642 28.5839 14.8868C28.4236 11.4188 26.4761 9.48844 22.9759 9.3296C20.3753 9.21267 17.6255 9.21267 15.0248 9.3296ZM22.8965 11.0496C25.4934 11.1665 26.7306 12.3917 26.8479 14.9654C26.9652 17.4878 26.9652 20.163 26.8479 22.6853C26.7269 25.3334 25.4259 26.4872 22.8965 26.6012C20.3493 26.7166 17.6514 26.7166 15.1043 26.6012C12.5741 26.4872 11.2738 25.3334 11.1521 22.6853C11.0356 20.163 11.0356 17.4878 11.1521 14.9654C11.2671 12.4578 12.4324 11.1702 15.1043 11.0496C17.6514 10.9342 20.3493 10.9342 22.8965 11.0496ZM19 22.0095C17.2254 22.0095 15.7863 20.5844 15.7863 18.8254C15.7871 17.0664 17.2254 15.6412 19 15.6412C20.7753 15.6412 22.2144 17.0664 22.2144 18.8254C22.2144 20.5837 20.7753 22.0095 19 22.0095ZM19 13.9198C16.2665 13.9198 14.0489 16.1163 14.0489 18.8254C14.0489 21.5345 16.2658 23.731 19 23.731C21.735 23.731 23.9511 21.5345 23.9511 18.8254C23.9511 16.1163 21.735 13.9198 19 13.9198ZM25.3041 13.7256C25.3041 14.3588 24.7861 14.8728 24.1471 14.8728C23.5073 14.8728 22.99 14.3595 22.99 13.7264C22.99 13.0932 23.5073 12.5799 24.1471 12.5799C24.7861 12.5799 25.3041 13.0932 25.3041 13.7256Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://t.me/sabzlearn" rel="nofollow">
+                <svg
+                  class="size-[30px] sm:size-[38px] text-neutral-300 transition-colors hover:text-sky-500"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.8"
+                    d="M18.6613 37.0256C28.9701 37.0256 37.3226 28.7396 37.3226 18.5128C37.3226 8.28603 28.9701 0 18.6613 0C8.35248 0 0 8.28603 0 18.5128C0 28.7396 8.35248 37.0256 18.6613 37.0256ZM8.53909 18.1117L26.5317 11.2296C27.3668 10.9303 28.0961 11.4317 27.8255 12.6844L27.8271 12.6828L24.7635 27.001C24.5365 28.0161 23.9284 28.2629 23.0778 27.7847L18.4125 24.3737L16.1622 26.5242C15.9134 26.7711 15.7035 26.9794 15.2214 26.9794L15.5526 22.2694L24.199 14.5202C24.5754 14.1916 24.115 14.0065 23.619 14.3336L12.9338 21.0074L8.3276 19.5819C7.32766 19.2672 7.30589 18.59 8.53909 18.1117Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex items-center flex-wrap gap-y-4 gap-x-12 mt-10 sm:mt-8"
+          >
+            <a
+              href="tel:02191030926"
+              class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base text-"
+            >
+              <svg class="size-5 sm:size-6">
+                <use href="#phone"></use>
+              </svg>
+              02191030926
+            </a>
+            <a
+              href="mailto:info@sabzlearn.ir"
+              class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base text-"
+            >
+              <svg class="size-5 sm:size-6">
+                <use href="#envelope"></use>
+              </svg>
+              info@sabzlearn.ir
+            </a>
+            <a
+              href="https://t.me/sabzlearn_support"
+              class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base text-"
+            >
+              <svg class="size-5 sm:size67">
+                <use href="#telegram"></use>
+              </svg>
+              sabzlearn_support@
+            </a>
+          </div>
+        </div>
+        <div class="flex items-start justify-between flex-wrap gap-5">
+          <div>
+            <span class="inline-block sm:text-2xl font-danaBold mb-3 sm:mb-4"
+              >درباره سبزلرن</span
+            >
+            <p class="max-w-100 text-"></p>
+            <div>
+              <p class="max-w-100 text-">
+                شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی،با خیال راحت
+                و بدون استرس میتونی از مسیر لذت ببری. ما در سبزلرن، توی سفر به
+                دنیای برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات
+                مون لذت ببریم.
+              </p>
+            </div>
+            <p></p>
+          </div>
+          <div class="flex items-start gap-x-6 sm:gap-x-7">
+            <div>
+              <span class="inline-block sm:text-2xl font-danaBold mb-3 sm:mb-4"
+                >دوره های پرطرفدار</span
+              >
+              <div
+                class="flex flex-col items-start gap-y-3 sm:gap-y-4 text-sm sm:text-base text-"
+              >
+                <a href="https://sabzlearn.ir/course/python/">آموزش پایتون</a>
+                <a href="https://sabzlearn.ir/course/java-script-zero-to-hero/"
+                  >آموزش جاوااسکریپت</a
+                >
+                <a href="https://sabzlearn.ir/course/html-tutorial/"
+                  >آموزش Html</a
+                >
+                <a href="https://sabzlearn.ir/course/css-tutorial/"
+                  >آموزش Css</a
+                >
+              </div>
+            </div>
+            <div>
+              <span class="inline-block sm:text-2xl font-danaBold mb-3 sm:mb-4"
+                >دسترسی سریع</span
+              >
+              <div
+                class="flex flex-col items-start gap-y-3 sm:gap-y-4 text-sm sm:text-base text-"
+              >
+                <a href="https://sabzlearn.ir/terms-conditions/"
+                  >قوانین و مقررات</a
+                >
+                <a href="https://sabzlearn.ir/my-account/tickets/"
+                  >ارسال تیکت</a
+                >
+                <a href="https://sabzlearn.ir/courses/">همه دوره ها</a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://trustseal.enamad.ir/?id=445206&amp;code=SgLtG6QTvIyffV2cjuiTe4sSPvMqsNSf"
+          >
+            <img
+              src="https://sabzlearn.ir/wp-content/themes/sabzlearn-theme/images/enamad.png"
+              class="w-36 sm:w-auto"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="flex items-center justify-center text-center sm:text-right sm:justify-between flex-wrap gap-y-2 gap-x-4 mt-8 sm:mt-10"
+        >
+          <span>کلیه حقوق مادی و معنوی سایت برای سبز لرن محفوظ است.</span>
+          <span>ساخته شده با ❤️ در سبزلرن</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
